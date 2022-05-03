@@ -1,0 +1,16 @@
+.c__education{
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+
+    margin-top: 20px;
+
+    &-card{
+        background-color: rgb(146, 145, 145);
+    border: 2px solid white;
+    border-radius: 4px;
+    }
+}

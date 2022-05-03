@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.scss";
+import { CV } from "./CV/CV";
+import Experience from "./Components/Experience";
+import Education from "./Components/Education";
+import Hero from "./Components/Hero";
+import More from "./Components/More";
+
+const { hero, education, experience, languages, habilities, volunteer } = CV;
 
 function App() {
+  const [showEducation, setShowEducation] = useState(true);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero hero={hero} />
+      <div className="c__button">
+        <button
+              className="c__button-btn"
+              onClick={() => setShowEducation(true)}
+            >
+              Education
+            </button>
+            <button
+              className="c__button-btn"
+              onClick={() => setShowEducation(false)}
+            >
+              Experience
+            </button>
+          </div>
+            
+            <div>
+        {showEducation ? (
+          <Education education={education} />
+        ) : (
+          <Experience experience={experience} />
+        )}
+      </div>
+	      <More
+        languages={languages}
+        habilities={habilities}
+        volunteer={volunteer}
+        />
     </div>
   );
 }

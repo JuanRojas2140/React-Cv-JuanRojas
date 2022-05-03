@@ -1,0 +1,29 @@
+.c__hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    
+
+    &-img{
+        width: 200px;
+        border-radius: 4px;
+    }
+
+    &-gallery{
+        background-color: rgb(146, 145, 145);
+        width: 300px;
+        height: 350;
+        border: 2px solid white;
+        border-radius: 8px;
+        margin-top: 20px;
+        font-size: larger;
+
+        a{
+            text-decoration: none;
+            color: black;   
+        }
+    }
+}

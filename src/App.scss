@@ -1,0 +1,14 @@
+.c__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    &-btn{
+        background-color: black;
+        color: rgb(86, 190, 155);
+        width: 150px;
+        height: 40px;
+        border: 2px solid rgba(255, 255, 255, 0.535);
+    }
+}

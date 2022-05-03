@@ -1,0 +1,21 @@
+.c__more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+
+    &-leng{
+        width: 260px;
+        border: 2px solid white;
+        border-radius: 4px;
+        background-color: rgb(146, 145, 145);
+    }
+
+    &-sk{
+        width: 260px;
+        border: 2px solid white;
+        border-radius: 4px;
+        background-color: rgb(146, 145, 145);
+    }
+}
